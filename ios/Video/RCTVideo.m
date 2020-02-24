@@ -972,7 +972,7 @@ static int const RCTVideoUnset = -1;
 - (void)setBufferConfig:(NSDictionary *)bufferConfig {
     NSNumber *minBufferMs = [bufferConfig objectForKey:@"minBufferMs"];
     if (minBufferMs) {
-      [self setMinimumBufferDuration: [minBufferMs floatValue] / 1000.0]
+      [self setMinimumBufferDuration: [minBufferMs floatValue] / 1000.0];
     }
 }
 
